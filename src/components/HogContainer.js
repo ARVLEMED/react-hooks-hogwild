@@ -5,8 +5,8 @@ import HogTile from './Hogtile';
 
 const HogContainer = ({ filteredHogs, handleHideHog, handleToggleGreased, greasedOnly, setSortBy }) => {
   return (
-    <Container>
-      <Button onClick={handleToggleGreased}>
+    <Container style={{marginBottom:'10px'}}>
+      <Button onClick={handleToggleGreased} style={{marginBottom:'10px'}}>
         {greasedOnly ? 'Show All Hogs' : 'Show Only Greased Hogs'}
       </Button>
       <Select
